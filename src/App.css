@@ -1,38 +1,107 @@
-.App {
+/* Home Page Styling */
+.bg-image {
+  background-image: url("https://www.wallpapertip.com/wmimgs/155-1553268_pics-photos-related-pictures-cool-nike-shoes-wallpaper.jpg");
+  background-color: #cccccc;
+  height: 740px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);  
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.644);
+  border: 2px solid #555555;
+  border-radius: 5%;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn:hover{
+  background-color: #555555;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Nav Bar Styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky; 
+}
+li {
+  float: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
+li a:hover:not(.active) {
+  background-color: rgb(51, 83, 172);
+}
+
+.btn-product{
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+  border: 2px solid #555555;
+  border-radius: 5%;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* Product Component Styling */ 
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-container > div {
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 0 20px #555555;
+  margin: 10px;
+  margin-left: 3.5%;
+}
+/* Product detail Component Styling */
+
+.product-detail {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+
